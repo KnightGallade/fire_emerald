@@ -339,20 +339,21 @@ const u8 gFrontAnimNames[][34] =
 };
 const u8 gBattleBackgroundNames[][30] =
 {
-    [MAP_BATTLE_SCENE_NORMAL]   = _("NORMAL                  "),
-    [MAP_BATTLE_SCENE_GYM]      = _("GYM                     "),
-    [MAP_BATTLE_SCENE_MAGMA]    = _("MAGMA                   "),
-    [MAP_BATTLE_SCENE_AQUA]     = _("AQUA                    "),
-    [MAP_BATTLE_SCENE_SIDNEY]   = _("SIDNEY                  "),
-    [MAP_BATTLE_SCENE_PHOEBE]   = _("PHOEBE                  "),
-    [MAP_BATTLE_SCENE_GLACIA]   = _("GLACIA                  "),
-    [MAP_BATTLE_SCENE_DRAKE]    = _("DRAKE                   "),
-    [MAP_BATTLE_SCENE_FRONTIER] = _("FRONTIER                "),
-    [MAP_BATTLE_SCENE_LEADER]   = _("LEADER                  "),
-    [MAP_BATTLE_SCENE_WALLACE]  = _("WALLACE                 "),
-    [MAP_BATTLE_SCENE_GROUDON]  = _("GROUDON                 "),
-    [MAP_BATTLE_SCENE_KYOGRE]   = _("KYOGRE                  "),
-    [MAP_BATTLE_SCENE_RAYQUAZA] = _("RAYQUAZA                "),
+    [MAP_BATTLE_SCENE_NORMAL]      = _("NORMAL                  "),
+    [MAP_BATTLE_SCENE_GYM]         = _("GYM                     "),
+    [MAP_BATTLE_SCENE_MAGMA]       = _("MAGMA                   "),
+    [MAP_BATTLE_SCENE_AQUA]        = _("AQUA                    "),
+    [MAP_BATTLE_SCENE_SIDNEY]      = _("SIDNEY                  "),
+    [MAP_BATTLE_SCENE_PHOEBE]      = _("PHOEBE                  "),
+    [MAP_BATTLE_SCENE_GLACIA]      = _("GLACIA                  "),
+    [MAP_BATTLE_SCENE_DRAKE]       = _("DRAKE                   "),
+    [MAP_BATTLE_SCENE_FRONTIER]    = _("FRONTIER                "),
+    [MAP_BATTLE_SCENE_LEADER]      = _("LEADER                  "),
+    [MAP_BATTLE_SCENE_WALLACE]     = _("WALLACE                 "),
+    [MAP_BATTLE_SCENE_GROUDON]     = _("GROUDON                 "),
+    [MAP_BATTLE_SCENE_KYOGRE]      = _("KYOGRE                  "),
+    [MAP_BATTLE_SCENE_RAYQUAZA]    = _("RAYQUAZA                "),
+    [MAP_BATTLE_SCENE_EMBLEM_TEST] = _("EMBLEM TEST             "),
 };
 
 const u8 gBattleBackgroundTerrainNames[][26] =
@@ -964,6 +965,11 @@ static void LoadBattleBg(u8 battleBgType, enum BattleEnvironments battleEnvironm
         LoadPalette(gBattleEnvironmentPalette_Kyogre, 0x20, 0x60);
         break;
     case MAP_BATTLE_SCENE_RAYQUAZA:
+        DecompressDataWithHeaderVram(gBattleEnvironmentTiles_Rayquaza, (void*)(BG_CHAR_ADDR(2)));
+        DecompressDataWithHeaderVram(gBattleEnvironmentTilemap_Rayquaza, (void*)(BG_SCREEN_ADDR(26)));
+        LoadPalette(gBattleEnvironmentPalette_Rayquaza, 0x20, 0x60);
+        break;
+    case MAP_BATTLE_SCENE_EMBLEM_TEST:
         DecompressDataWithHeaderVram(gBattleEnvironmentTiles_Rayquaza, (void*)(BG_CHAR_ADDR(2)));
         DecompressDataWithHeaderVram(gBattleEnvironmentTilemap_Rayquaza, (void*)(BG_SCREEN_ADDR(26)));
         LoadPalette(gBattleEnvironmentPalette_Rayquaza, 0x20, 0x60);

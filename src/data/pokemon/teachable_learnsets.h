@@ -35921,3 +35921,10 @@ static const u16 sPecharuntTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_PECHARUNT
+
+#if P_FAMILY_MYRMIDON
+static const u16 sMyrmidonTeachableLearnset[] = {
+    MOVE_CUT,
+    MOVE_UNAVAILABLE,
+};
+#endif //P_FAMILY_MYRMIDON

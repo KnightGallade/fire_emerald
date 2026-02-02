@@ -1935,6 +1935,16 @@ static const enum Type sDexSearchTypeIds[NUMBER_OF_MON_TYPES] =
     TYPE_DRAGON,
     TYPE_DARK,
     TYPE_FAIRY,
+    TYPE_SWORD,
+    TYPE_LANCE,
+    TYPE_AXE,
+    TYPE_BOW,
+    TYPE_ANIMA_MAGIC,
+    TYPE_LIGHT_MAGIC,
+    TYPE_DARK_MAGIC,
+    TYPE_STAFF,
+    TYPE_DAGGER,
+    TYPE_BRAWL,
 };
 
 // Number pairs are the task data for tracking the cursor pos and scroll offset of each option list

@@ -1412,6 +1412,16 @@ static const struct SearchOptionText sDexSearchTypeOptions[] =
     {gText_DexEmptyString, gTypesInfo[TYPE_DRAGON].name},
     {gText_DexEmptyString, gTypesInfo[TYPE_DARK].name},
     {gText_DexEmptyString, gTypesInfo[TYPE_FAIRY].name},
+    {gText_DexEmptyString, gTypesInfo[TYPE_SWORD].name},
+    {gText_DexEmptyString, gTypesInfo[TYPE_LANCE].name},
+    {gText_DexEmptyString, gTypesInfo[TYPE_AXE].name},
+    {gText_DexEmptyString, gTypesInfo[TYPE_BOW].name},
+    {gText_DexEmptyString, gTypesInfo[TYPE_ANIMA_MAGIC].name},
+    {gText_DexEmptyString, gTypesInfo[TYPE_LIGHT_MAGIC].name},
+    {gText_DexEmptyString, gTypesInfo[TYPE_DARK_MAGIC].name},
+    {gText_DexEmptyString, gTypesInfo[TYPE_STAFF].name},
+    {gText_DexEmptyString, gTypesInfo[TYPE_DAGGER].name},
+    {gText_DexEmptyString, gTypesInfo[TYPE_BRAWL].name},
     {},
 };
 
@@ -1447,6 +1457,16 @@ static const enum Type sDexSearchTypeIds[NUMBER_OF_MON_TYPES] =
     TYPE_DRAGON,
     TYPE_DARK,
     TYPE_FAIRY,
+    TYPE_SWORD,
+    TYPE_LANCE,
+    TYPE_AXE,
+    TYPE_BOW,
+    TYPE_ANIMA_MAGIC,
+    TYPE_LIGHT_MAGIC,
+    TYPE_DARK_MAGIC,
+    TYPE_STAFF,
+    TYPE_DAGGER,
+    TYPE_BRAWL,
 };
 
 // Number pairs are the task data for tracking the cursor pos and scroll offset of each option list

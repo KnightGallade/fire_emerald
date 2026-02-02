@@ -22314,3 +22314,13 @@ static const struct LevelUpMove sPecharuntLevelUpLearnset[] = {
 };
 #endif //P_FAMILY_PECHARUNT
 
+#if P_FAMILY_MYRMIDON
+static const struct LevelUpMove sMyrmidonLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_CUT),
+    LEVEL_UP_MOVE( 1, MOVE_SLASH),
+    LEVEL_UP_MOVE( 1, MOVE_MEAN_LOOK),
+    LEVEL_UP_MOVE( 1, MOVE_TACKLE),
+    LEVEL_UP_END
+};
+#endif //P_FAMILY_MYRMIDON
+

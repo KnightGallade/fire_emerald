@@ -460,6 +460,22 @@ ENG = FC 16
 PAUSE_MUSIC = FC 17
 RESUME_MUSIC = FC 18
 SPEAKER = FC 19
+CREATE_MUGSHOT = FC 1A
+DESTROY_MUGSHOT = FC 1B
+
+@ Mugshot stuff starts
+@ these are basically what include/constants/field_mugshots.h have
+@ but without the x_COUNT and x_NONE ones for strings
+
+@ mugshot stuff begins
+
+MUGSHOT_TEST = 01
+MUGSHOT_JOSHUA = 02
+
+EMOTE_NORMAL = 00
+EMOTE_ALT = 01
+
+@ mugshot stuff ends
 
 @ Speaker names, the order must be matching with include/constants/speaker_names.h
 NAME_NONE = 00

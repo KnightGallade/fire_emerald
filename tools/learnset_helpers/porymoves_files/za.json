@@ -19082,5 +19082,30 @@
     ],
     "TutorMoves": [],
     "EggMoves": []
+  },
+  "MYRMIDON": {
+    "LevelMoves": [
+      {
+        "Level": "1",
+        "Move": "MOVE_CUT"
+      },
+      {
+        "Level": "1",
+        "Move": "MOVE_SLASH"
+      },
+      {
+        "Level": "1",
+        "Move": "MOVE_MEAN_LOOK"
+      },
+      {
+        "Level": "1",
+        "Move": "MOVE_TACKLE"
+      }
+    ],
+    "TMMoves": [
+      "MOVE_AGILITY"
+    ],
+    "TutorMoves": [],
+    "EggMoves": []
   }
 }

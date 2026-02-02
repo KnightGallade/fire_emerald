@@ -26786,6 +26786,33 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_FAMILY_PECHARUNT
 
+#if P_FAMILY_MYRMIDON
+    const u32 gMonFrontPic_Myrmidon[] = INCBIN_U32("graphics/unit/myrmidon/anim_front.4bpp.smol");
+    const u16 gMonPalette_Myrmidon[] = INCBIN_U16("graphics/unit/myrmidon/normal.gbapal");
+    const u32 gMonBackPic_Myrmidon[] = INCBIN_U32("graphics/unit/myrmidon/back.4bpp.smol");
+    const u16 gMonShinyPalette_Myrmidon[] = INCBIN_U16("graphics/unit/myrmidon/shiny.gbapal");
+    const u8 gMonIcon_Myrmidon[] = INCBIN_U8("graphics/unit/myrmidon/icon.4bpp");
+#if P_FOOTPRINTS
+    const u8 gMonFootprint_Myrmidon[] = INCBIN_U8("graphics/unit/myrmidon/footprint.1bpp");
+#endif //P_FOOTPRINTS
+#if OW_POKEMON_OBJECT_EVENTS
+    const u32 gObjectEventPic_Myrmidon[] = INCBIN_COMP("graphics/unit/myrmidon/overworld.4bpp");
+#if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
+    const u16 gOverworldPalette_Myrmidon[] = INCBIN_U16("graphics/unit/myrmidon/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_Myrmidon[] = INCBIN_U16("graphics/unit/myrmidon/overworld_shiny.gbapal");
+#endif //OW_PKMN_OBJECTS_SHARE_PALETTES
+#endif //OW_POKEMON_OBJECT_EVENTS
+
+#if P_GENDER_DIFFERENCES
+    const u32 gMonFrontPic_MyrmidonF[] = INCBIN_U32("graphics/unit/myrmidon/anim_frontf.4bpp.smol");
+    const u32 gMonBackPic_MyrmidonF[] = INCBIN_U32("graphics/unit/myrmidon/backf.4bpp.smol");
+    const u8 gMonIcon_MyrmidonF[] = INCBIN_U8("graphics/unit/myrmidon/iconf.4bpp");
+#if OW_POKEMON_OBJECT_EVENTS
+    const u32 gObjectEventPic_MyrmidonF[] = INCBIN_COMP("graphics/unit/myrmidon/overworldf.4bpp");
+#endif //OW_POKEMON_OBJECT_EVENTS
+#endif //P_GENDER_DIFFERENCES
+#endif //P_FAMILY_MYRMIDON
+
     const u32 gMonFrontPic_Egg[] = INCBIN_U32("graphics/pokemon/egg/anim_front.4bpp.smol");
     const u16 gMonPalette_Egg[] = INCBIN_U16("graphics/pokemon/egg/normal.gbapal");
     const u8 gMonIcon_Egg[] = INCBIN_U8("graphics/pokemon/egg/icon.4bpp");

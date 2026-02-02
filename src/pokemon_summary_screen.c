@@ -931,6 +931,46 @@ static const union AnimCmd sSpriteAnim_TypeStellar[] = {
     ANIMCMD_FRAME(TYPE_STELLAR * 8, 0, FALSE, FALSE),
     ANIMCMD_END
 };
+static const union AnimCmd sPriteAnim_TypeSword[] = {
+    ANIMCMD_FRAME(TYPE_SWORD * 8, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
+static const union AnimCmd sPriteAnim_TypeLance[] = {
+    ANIMCMD_FRAME(TYPE_LANCE * 8, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
+static const union AnimCmd sPriteAnim_TypeAxe[] = {
+    ANIMCMD_FRAME(TYPE_AXE * 8, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
+static const union AnimCmd sPriteAnim_TypeBow[] = {
+    ANIMCMD_FRAME(TYPE_BOW * 8, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
+static const union AnimCmd sPriteAnim_TypeAnimaMagic[] = {
+    ANIMCMD_FRAME(TYPE_ANIMA_MAGIC * 8, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
+static const union AnimCmd sPriteAnim_TypeLightMagic[] = {
+    ANIMCMD_FRAME(TYPE_LIGHT_MAGIC * 8, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
+static const union AnimCmd sPriteAnim_TypeDarkMagic[] = {
+    ANIMCMD_FRAME(TYPE_DARK_MAGIC * 8, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
+static const union AnimCmd sPriteAnim_TypeStaff[] = {
+    ANIMCMD_FRAME(TYPE_STAFF * 8, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
+static const union AnimCmd sPriteAnim_TypeDagger[] = {
+    ANIMCMD_FRAME(TYPE_DAGGER * 8, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
+static const union AnimCmd sPriteAnim_TypeBrawl[] = {
+    ANIMCMD_FRAME(TYPE_BRAWL * 8, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
 static const union AnimCmd sSpriteAnim_CategoryCool[] = {
     ANIMCMD_FRAME((CONTEST_CATEGORY_COOL + NUMBER_OF_MON_TYPES) * 8, 0, FALSE, FALSE),
     ANIMCMD_END
@@ -973,6 +1013,16 @@ static const union AnimCmd *const sSpriteAnimTable_MoveTypes[NUMBER_OF_MON_TYPES
     [TYPE_DARK] = sSpriteAnim_TypeDark,
     [TYPE_FAIRY] = sSpriteAnim_TypeFairy,
     [TYPE_STELLAR] = sSpriteAnim_TypeStellar,
+    [TYPE_SWORD] = sPriteAnim_TypeSword,
+    [TYPE_LANCE] = sPriteAnim_TypeLance,
+    [TYPE_AXE] = sPriteAnim_TypeAxe,
+    [TYPE_BOW] = sPriteAnim_TypeBow,
+    [TYPE_ANIMA_MAGIC] = sPriteAnim_TypeAnimaMagic,
+    [TYPE_LIGHT_MAGIC] = sPriteAnim_TypeLightMagic,
+    [TYPE_DARK_MAGIC] = sPriteAnim_TypeDarkMagic,
+    [TYPE_STAFF] = sPriteAnim_TypeStaff,
+    [TYPE_DAGGER] = sPriteAnim_TypeDagger,
+    [TYPE_BRAWL] = sPriteAnim_TypeBrawl,
     [NUMBER_OF_MON_TYPES + CONTEST_CATEGORY_COOL] = sSpriteAnim_CategoryCool,
     [NUMBER_OF_MON_TYPES + CONTEST_CATEGORY_BEAUTY] = sSpriteAnim_CategoryBeauty,
     [NUMBER_OF_MON_TYPES + CONTEST_CATEGORY_CUTE] = sSpriteAnim_CategoryCute,

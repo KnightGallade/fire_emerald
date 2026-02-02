@@ -25,6 +25,17 @@ enum __attribute__((packed)) Type
     TYPE_DARK = 18,
     TYPE_FAIRY = 19,
     TYPE_STELLAR = 20,
+    TYPE_SWORD = 21,
+    TYPE_LANCE = 22,
+    TYPE_AXE = 23,
+    TYPE_BOW = 24,
+    TYPE_ANIMA_MAGIC = 25,
+    TYPE_LIGHT_MAGIC = 26,
+    TYPE_DARK_MAGIC = 27,
+    TYPE_STAFF = 28,
+    TYPE_DAGGER = 29,
+    TYPE_BRAWL = 30,
+    // TYPE_STONE = 31,
     NUMBER_OF_MON_TYPES
 };
 

@@ -6729,4 +6729,15 @@ static const struct SpriteFrameImage sPicTable_Pecharunt[] = {
 };
 #endif //P_FAMILY_PECHARUNT
 
+#if P_FAMILY_MYRMIDON
+static const struct SpriteFrameImage sPicTable_Myrmidon[] = {
+    overworld_ascending_frames(gObjectEventPic_Myrmidon, 4, 4),
+};
+#if P_GENDER_DIFFERENCES
+static const struct SpriteFrameImage sPicTable_MyrmidonF[] = {
+    overworld_ascending_frames(gObjectEventPic_MyrmidonF, 4, 4),
+};
+#endif //P_GENDER_DIFFERENCES
+#endif //P_FAMILY_MYRMIDON
+
 #endif //OW_POKEMON_OBJECT_EVENTS

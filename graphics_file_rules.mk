@@ -23,7 +23,7 @@ NAMINGGFXDIR := graphics/naming_screen
 SPINDAGFXDIR := graphics/pokemon/spinda/spots
 TITLESCREENGFXDIR := graphics/title_screen
 
-types := none normal fight flying poison ground rock bug ghost steel mystery fire water grass electric psychic ice dragon dark fairy stellar
+types := none normal fight flying poison ground rock bug ghost steel mystery fire water grass electric psychic ice dragon dark fairy stellar sword lance axe bow anima_magic light_magic dark_magic staff dagger brawl
 contest_types := cool beauty cute smart tough
 
 ### Tilesets ###
@@ -392,7 +392,7 @@ $(TYPESGFXDIR)/move_types.4bpp: $(types:%=$(TYPESGFXDIR)/%.4bpp) $(contest_types
 
 $(TYPESGFXDIR)/move_types.gbapal: $(TYPESGFXDIR)/move_types_1.gbapal \
                                   $(TYPESGFXDIR)/move_types_2.gbapal \
-                                  $(TYPESGFXDIR)/move_types_3.gbapal
+                                  $(TYPESGFXDIR)/move_types_weapons.gbapal
 	@cat $^ >$@
 
 graphics/bag/menu.4bpp: %.4bpp: %.png

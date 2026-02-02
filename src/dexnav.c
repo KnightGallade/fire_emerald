@@ -2097,6 +2097,16 @@ static const u8 sMoveTypeToOamPaletteNum[NUMBER_OF_MON_TYPES] =
     [TYPE_DRAGON] = TYPE_ICON_PAL_NUM_2,
     [TYPE_DARK] = TYPE_ICON_PAL_NUM_0,
     [TYPE_FAIRY] = TYPE_ICON_PAL_NUM_1,
+    [TYPE_SWORD] = TYPE_ICON_PAL_NUM_2, // TODO - technically is a new 4th one, but no need to fix since no dexnav used
+    [TYPE_LANCE] = TYPE_ICON_PAL_NUM_2, // TODO - technically is a new 4th one, but no need to fix since no dexnav used
+    [TYPE_AXE] = TYPE_ICON_PAL_NUM_2, // TODO - technically is a new 4th one, but no need to fix since no dexnav used
+    [TYPE_BOW] = TYPE_ICON_PAL_NUM_2, // TODO - technically is a new 4th one, but no need to fix since no dexnav used
+    [TYPE_ANIMA_MAGIC] = TYPE_ICON_PAL_NUM_2, // TODO - technically is a new 4th one, but no need to fix since no dexnav used
+    [TYPE_LIGHT_MAGIC] = TYPE_ICON_PAL_NUM_2, // TODO - technically is a new 4th one, but no need to fix since no dexnav used
+    [TYPE_DARK_MAGIC] = TYPE_ICON_PAL_NUM_2, // TODO - technically is a new 4th one, but no need to fix since no dexnav used
+    [TYPE_STAFF] = TYPE_ICON_PAL_NUM_2, // TODO - technically is a new 4th one, but no need to fix since no dexnav used
+    [TYPE_DAGGER] = TYPE_ICON_PAL_NUM_2, // TODO - technically is a new 4th one, but no need to fix since no dexnav used
+    [TYPE_BRAWL] = TYPE_ICON_PAL_NUM_2, // TODO - technically is a new 4th one, but no need to fix since no dexnav used
 };
 static void SetTypeIconPosAndPal(u8 typeId, u8 x, u8 y, u8 spriteArrayId)
 {
